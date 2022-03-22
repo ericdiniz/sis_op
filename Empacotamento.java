@@ -67,6 +67,7 @@ class Cliente{
 
     public void separar(String linha)
     {
+        // NAO FUNCIONA
         System.out.println("entrei no separar"+linha);
     };
 
@@ -88,7 +89,8 @@ public class Empacotamento {
             for (int i = 1; i <= numPedidos + 1; i++) {
                 String data = myReader.nextLine();
                 // data leva pra classe cliente
-                cliente[i] = new Cliente(); 
+                cliente[i] = new Cliente();
+                // PARAMOS AQUI, TEM QUE FAZER FUNCIONAR O SEPARAR!
                 cliente[i].separar(data);
                 // separa o codigo com ; e faz os trem
             }
