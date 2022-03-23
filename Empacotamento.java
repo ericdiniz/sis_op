@@ -76,10 +76,23 @@ class Cliente {
     }
 
     // receber a linha do main e inserir no objeto cliente
-    public void separar(String linha) {
+    public void SepararString(String linha) {
         // NAO FUNCIONA
         System.out.println(linha);
 
+        // não estou conseguindo separar a string em 3 partes;
+        // Está dando o seguinte erro:
+        /*
+        Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 
+        Index 1 out of bounds for length 1
+	    at Cliente.separar(Empacotamento.java:76)
+	    at Empacotamento.main(Empacotamento.java:107)
+        */
+        /* Se alguem souber consertar pode deixar o codigo antigo e fazer um novo
+        quero ver onde foi o erro!
+        */
+
+        
         String[] parts = linha.split(";");
         // ainda nao funciona, isso é um adiantamento do código
         String name = parts[0]; // nome
@@ -185,7 +198,8 @@ public class Empacotamento {
                 // data leva pra classe cliente
                 // cliente[i] = new Cliente();
                 System.out.println(data);
-                cliente.separar(data);
+                // até aqui tudo funciona!
+                cliente.SepararString(data);
                 // separa o codigo com ; e faz os trem
             }
             myReader.close();
