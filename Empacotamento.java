@@ -77,36 +77,25 @@ class Cliente {
 
     // receber a linha do main e inserir no objeto cliente
     public void SepararString(String linha) {
-        // NAO FUNCIONA
-        System.out.println(linha);
-
-        // não estou conseguindo separar a string em 3 partes;
-        // Está dando o seguinte erro:
-        /*
-        Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 
-        Index 1 out of bounds for length 1
-	    at Cliente.separar(Empacotamento.java:76)
-	    at Empacotamento.main(Empacotamento.java:107)
-        */
-        /* Se alguem souber consertar pode deixar o codigo antigo e fazer um novo
-        quero ver onde foi o erro!
-        */
-
-        
-        String[] parts = linha.split(";");
-        // ainda nao funciona, isso é um adiantamento do código
-        String name = parts[0]; // nome
-        String ped = parts[1]; // pedidos
-        String prazo = parts[2]; // prazo
-
-        // for(int i = 0; i < 3; i++)
-        // System.out.println(sublinhas[i]);
-
-        // Colocando as substrings no cliente
-        this.nome = name;
-        this.pedidos = Integer.parseInt(ped);
-        this.PrazoEmpc = Integer.parseInt(prazo);
-
+        String array[] = new String[3]; 
+        int j = 0;
+        String[] rows = linha.split(";");
+        for (String r : rows) {
+            String[] cols = r.split(";");
+            for (String c : cols) {
+                array[j] = c;
+                System.out.print(array[j] + "\n" );
+                j++;
+            }
+        }
+        // tem que terminar essa parte
+        // pesquisar sobre o for each
+        this.nome = array[0];
+        this.pedidos = Integer.parseInt(array[1]);
+        this.PrazoEmpc = Integer.parseInt(array[2]);
+        for(int k = 0; k < 3; k++)
+            array[k] = "";
+        j = 0;    
     }
 
 }
@@ -140,7 +129,8 @@ class Fila {
     // remover cliente da fila
 
     // ver qual cliente tem prioridade na fila, colocando eles em ordem
-    // metodo utilizado : QUICKSORT  pq? pq ele é rapido, caso alguem achar um melhor pode mudar.
+    // metodo utilizado : QUICKSORT pq? pq ele é rapido, caso alguem achar um melhor
+    // pode mudar.
     public void quicksort(int inicio, int fim) {
         if (inicio < fim) {
             int posicaoPivo = separar(inicio, fim);
@@ -148,6 +138,7 @@ class Fila {
             quicksort(posicaoPivo + 1, fim);
         }
     }
+
     public int separar(int inicio, int fim) {
         Cliente pivo = array[inicio];
         int i = inicio + 1, f = fim;
@@ -156,7 +147,8 @@ class Fila {
                 i++;
             } else if (pivo.getPrazoEmpc() < array[f].getPrazoEmpc()) {
                 f--;
-                // quando o prazo for o mesmo, estou dando prioridade para quem tiver menor pedido.
+                // quando o prazo for o mesmo, estou dando prioridade para quem tiver menor
+                // pedido.
             } else if (array[i].getPrazoEmpc() == pivo.getPrazoEmpc()
                     && array[i].getPedidos() < pivo.getPedidos()) {
                 i++;
@@ -191,20 +183,16 @@ public class Empacotamento {
             numPedidos = myReader.nextInt();
 
             // var cliente
-            Cliente cliente = new Cliente();
+            Cliente cliente[] = new Cliente[numPedidos];
 
             for (int i = 1; i <= numPedidos + 1; i++) {
                 String data = myReader.nextLine();
-                // data leva pra classe cliente
-                // cliente[i] = new Cliente();
-                System.out.println(data);
-                // até aqui tudo funciona!
-                cliente.SepararString(data);
-                // separa o codigo com ; e faz os trem
+                cliente[i] = new Cliente();
+                cliente[i].SepararString(data);
             }
             myReader.close();
         } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
+            System.out.println("Erro ocorrido.");
             e.printStackTrace();
         }
 
