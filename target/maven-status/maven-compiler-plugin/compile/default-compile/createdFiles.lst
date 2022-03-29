@@ -1,0 +1,7 @@
+br\so\app\App.class
+br\so\entity\Pacote.class
+br\so\entity\Produto.class
+br\so\entity\Cliente.class
+br\so\entity\Pedido.class
+br\so\entity\ProdutoX.class
+br\so\importador\importadorCSV.class
