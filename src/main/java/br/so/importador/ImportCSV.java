@@ -22,8 +22,6 @@ public class ImportCSV {
 			CSVReader csvReader = new CSVReaderBuilder(filereader)
 					.withCSVParser(new CSVParserBuilder().withSeparator(';').build()).withSkipLines(1).build();
 			String[] nextRecord;
-			int cont = 0;
-
 			List<Pedido> pedidos = new ArrayList<>();
 
 			while ((nextRecord = csvReader.readNext()) != null) {
@@ -35,8 +33,6 @@ public class ImportCSV {
 				p.setPrazoEmpc(Integer.valueOf(nextRecord[2]));
 
 				pedidos.add(p);
-
-				cont++;
 			}
 
 			return pedidos;

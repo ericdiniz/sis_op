@@ -1,6 +1,6 @@
 package br.so.entity;
 
-public class Pedido {
+public class Pedido implements Comparable<Pedido> {
 
     private Cliente cliente;
     private int quantProdutos;
@@ -42,11 +42,26 @@ public class Pedido {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
+
+
     
     @Override
     public String toString() {
     
         return "Cliente: " + this.cliente.getNome() + " | Quantidade de produtos: " + this.quantProdutos + " | Tempo de empacotamento " + this.getPrazoEmpc();
+    }
+
+    @Override
+    public int compareTo(Pedido o) {
+
+        if (this.prazoEmpc < o.prazoEmpc) {
+            return -1;
+        }
+        if (this.prazoEmpc > o.prazoEmpc) {
+            return 1;
+        }
+        return 0;
+    
     }
 
     
