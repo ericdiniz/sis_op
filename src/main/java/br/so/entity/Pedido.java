@@ -48,7 +48,7 @@ public class Pedido implements Comparable<Pedido> {
     @Override
     public String toString() {
     
-        return "Cliente: " + this.cliente.getNome() + " | Quantidade de produtos: " + this.quantProdutos + " | Tempo de empacotamento " + this.getPrazoEmpc();
+        return "Cliente: " + this.cliente.getNome() + " | Quantidade de produtos: " + this.quantProdutos + " | Tempo de empacotamento: " + this.getPrazoEmpc();
     }
 
     @Override

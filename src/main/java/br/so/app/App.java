@@ -15,7 +15,6 @@ public class App
     {
       List<Pedido> pedidos = ImportCSV.readArqCSV("teste.txt");
 
-      pedidos.stream().sorted().forEach(p -> System.out.println(p.toString()));
-      
+      pedidos.stream().sorted().forEach(p -> System.out.println(p.toString())); 
     }
 }
