@@ -64,5 +64,16 @@ public class Pedido implements Comparable<Pedido> {
     
     }
 
+    // montar a esteira
+    /*
+        Regras: 
+        - limite de volume
+        - prazo empacotamento 
+        - tempo fixo 5 seg
+        - tempo diario de 8h (4h manha e 4h tarde)
+        
+    */
+
+
     
 }
