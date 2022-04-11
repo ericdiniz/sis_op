@@ -1,0 +1,485 @@
+484;;;
+Absorvente higiênico A;16;1933;0
+Algodão A;61;1130;0
+Anti-séptico bucal A;8;159;0
+Condicionador A;104;412;0
+Cotonetes A;28;1955;0
+Creme de barbear A;18;847;198
+Creme hidratante para as mãos A;104;450;137
+Creme hidratante para o corpo A;65;1109;0
+Creme para pentear A;6;466;0
+Creme pos barba A;52;583;0
+Desodorante A;80;654;0
+Escova de cabelos A;7;2273;0
+Escova de dentes A;51;486;42
+Esmalte A;9;1452;0
+Esponja de banho A;75;447;0
+Fio dental A;10;469;0
+Fralda descartável A;97;491;0
+Gel de cabelo A;130;505;0
+Lâminas de barbear A;7;477;0
+Lenços umedecidos A;22;1513;0
+Lixa de unhas A;44;524;0
+Loção contra assaduras A;56;1120;0
+Loção de limpeza A;151;471;0
+Papel higiênico A;99;666;0
+Pasta de dentes A;6;1262;0
+Pente A;95;462;44
+Protetor solar A;5;1706;0
+Removedor de esmaltes A;14;1191;0
+Sabonete A;27;525;0
+Sabonete em barra A;21;2222;0
+Sabonete líquido A;73;604;0
+Talco infantil A;71;757;0
+Xampoo A;21;3203;0
+Água sanitária A;7;712;0
+Álcool A;143;388;0
+Alvejante A;38;690;0
+Amaciante A;83;809;0
+Anil A;3;2572;0
+Cera em pasta A;69;432;32
+Cera líquida A;7;3521;0
+Desentupidor de pia A;24;1606;0
+Desinfetante banheiro A;44;966;0
+Desinfetante geral A;18;2774;0
+Desodorizador (banheiro) A;27;421;50
+Desodorizador (casa) A;35;397;160
+Detergente A;21;2133;0
+Eliminador de odores (geladeira) A;61;719;0
+Eliminador de odores (roupas) A;43;1500;0
+Esponja de aço A;45;571;0
+Esponja dupla face A;60;660;0
+Flanela de limpeza A;30;431;44
+Graxa A;91;499;18
+Guardanapo de papel A;26;611;0
+Inseticida e raticida A;84;509;0
+Lã de aço A;82;849;0
+Limpador A;104;608;0
+Limpador de tapetes A;94;432;0
+Limpa-forno A;8;4308;160
+Limpa-vidros A;4;643;45
+Lustra-móveis A;19;1950;145
+Luva doméstica A;50;477;0
+Pano de limpeza de cozinha A;7;3179;191
+Passa-roupas A;30;608;0
+Polidor de metais A;14;375;0
+Pré-lavagem A;97;587;163
+Removedor A;62;899;0
+Rodo A;35;843;0
+Rodo de pia A;87;436;0
+Sabão de coco A;117;571;59
+Sabão em barra A;28;1952;0
+Sabão em pó A;88;407;189
+Sabão líquido (roupas) A;7;1202;0
+Saco de lixo grande A;34;1191;99
+Saco de lixo médio A;38;1933;0
+Saco de lixo pequeno A;43;696;0
+Saponáceo A;70;401;0
+Tira-manchas A;20;1825;78
+Toalha de papel A;37;1564;86
+Vassoura A;87;508;0
+Carne bovina A;23;888;0
+Carne suína A;15;588;0
+Coalhada A;1;1467;0
+Cream cheese A;22;239;0
+Creme de leite fresco A;32;1792;0
+Frango A;33;320;0
+Iogurte A;39;1442;110
+Leite A;42;424;127
+Linguiça A;74;749;0
+Patê A;6;113;0
+Peixe A;128;393;0
+Presunto A;19;631;22
+Queijo A;8;713;0
+Requeijão cremoso A;118;477;0
+Salsicha A;68;639;176
+Água A;8;180;0
+Aperitivos e licores A;81;411;0
+Cerveja A;13;565;98
+Chás prontos A;37;843;0
+Destilados A;133;498;105
+Isotônicos e energéticos A;8;1862;0
+Outros A;5;1472;0
+Refesco em pó A;107;657;0
+Refrigerantes A;130;394;0
+Sucos A;48;630;0
+Vinho A;30;2187;142
+Empanados A;16;1209;0
+Hambúrguer A;1;1778;0
+Legumes A;35;676;59
+Pizza A;7;4775;0
+Pratos prontos A;13;4003;184
+Salgadinhos A;20;1172;0
+Sobremesa A;55;708;0
+Sorvete A;12;1842;0
+Abacate A;7;212;154
+Acerola A;44;1185;0
+Ameixa A;64;956;0
+Amora A;26;621;60
+Banana A;11;51;0
+Cereja A;59;927;177
+Figo A;25;2057;189
+Framboesa A;48;1198;0
+Laranja A;105;488;26
+Limão A;1;4319;131
+Maçã A;107;574;0
+Mamão A;16;2703;33
+Manga A;10;1705;0
+Melancia A;91;535;31
+Melão A;38;919;0
+Morango A;29;396;18
+Nectarina A;110;653;0
+Pera A;31;627;123
+Pêssego A;74;435;135
+Pitanga A;28;601;0
+Uva A;45;1029;0
+Adoçante A;71;516;0
+Biscoito doce A;24;2078;0
+Biscoito salgado A;53;1402;158
+Bolo A;42;443;0
+Café A;45;1400;66
+Cereal matinal A;69;649;0
+Chá A;3;918;0
+Chocolate em pó A;8;2037;164
+Filtro de papel A;15;632;0
+Leite em pó A;40;1594;79
+Mistura para bolo A;64;857;0
+Pão de forma A;26;619;27
+Pão francês A;13;3097;0
+Torradas A;90;447;0
+Açúcar A;39;1159;0
+Alimento infantil A;25;902;0
+Amido de milho A;39;1892;0
+Arroz A;59;1081;77
+Aspargo em conserva A;13;3014;133
+Atum em lata A;42;1231;0
+Aveia A;45;924;115
+Azeite A;22;878;0
+Azeitonas A;20;905;16
+Batata frita A;12;3964;0
+Caldo de carne/galinha/peixe A;144;419;0
+Catchup A;6;2402;0
+Chocolate A;9;2001;92
+Creme de leite em lata A;16;851;0
+Ervilha A;64;456;0
+Ervilha em conserva A;77;694;39
+Farinha de milho A;21;2225;182
+Farinha de rosca A;121;551;0
+Farinha de trigo A;16;4281;0
+Feijão A;37;921;108
+Gelatina A;25;1717;0
+Gelatina em pó A;47;1206;0
+Grão-de-bico A;54;408;0
+Leite condensado A;149;420;0
+Lentilha A;36;981;199
+Macarrão A;44;855;0
+Macarrão massa fresca A;23;371;0
+Macarrão para sopa A;6;1666;0
+Maionese A;29;429;83
+Milho em conserva A;17;3152;0
+Milho para pipoca A;33;1410;0
+Molho de soja A;64;756;27
+Molho de tomate A;9;111;0
+Mostarda A;10;36;0
+Óleo A;15;977;68
+Ovos A;76;633;120
+Sal A;62;936;0
+Sardinha em lata A;52;497;39
+Caixas A;23;2094;176
+Fardos A;37;1644;0
+Frascos A;38;416;168
+Garrafas A;109;598;165
+Latas A;44;629;173
+Pacotes A;110;623;0
+Potes A;28;587;0
+Rolos A;77;393;0
+Algodão B;41;1096;0
+Anti-séptico bucal B;43;894;0
+Condicionador B;32;1237;0
+Cotonetes B;124;445;0
+Creme de barbear B;65;1125;80
+Creme hidratante para as mãos B;19;2433;0
+Creme hidratante para o corpo B;33;1005;178
+Creme para pentear B;3;394;0
+Creme pos barba B;83;489;0
+Desodorante B;21;582;0
+Escova de cabelos B;28;474;28
+Escova de dentes B;44;1693;183
+Esmalte B;24;932;0
+Esponja de banho B;28;1502;0
+Fio dental B;27;2311;0
+Fralda descartável B;100;426;0
+Gel de cabelo B;20;411;0
+Lâminas de barbear B;42;1628;0
+Lenços umedecidos B;9;43;0
+Lixa de unhas B;45;817;166
+Loção contra assaduras B;50;599;156
+Loção de limpeza B;51;809;183
+Papel higiênico B;60;1153;0
+Pasta de dentes B;37;1006;0
+Pente B;1;3910;112
+Protetor solar B;116;591;0
+Removedor de esmaltes B;171;426;0
+Sabonete B;131;429;139
+Sabonete em barra B;61;544;0
+Sabonete líquido B;29;2239;0
+Talco infantil B;49;1517;0
+Xampoo B;177;409;67
+Água sanitária B;14;2942;120
+Álcool B;15;1418;0
+Alvejante B;35;1661;194
+Amaciante B;116;509;0
+Anil B;23;275;0
+Cera em pasta B;35;1465;186
+Cera líquida B;68;784;0
+Desentupidor de pia B;65;625;0
+Desinfetante banheiro B;7;758;0
+Desinfetante geral B;78;503;58
+Desodorizador (banheiro) B;17;3890;0
+Desodorizador (casa) B;43;1258;0
+Detergente B;55;626;0
+Eliminador de odores (geladeira) B;5;1101;0
+Eliminador de odores (roupas) B;57;358;0
+Esponja de aço B;91;522;159
+Esponja dupla face B;105;494;94
+Flanela de limpeza B;3;958;120
+Graxa B;93;658;157
+Guardanapo de papel B;38;454;0
+Inseticida e raticida B;7;644;0
+Lã de aço B;39;1830;89
+Limpador B;60;1165;57
+Limpador de tapetes B;24;1104;0
+Limpa-forno B;34;1832;0
+Limpa-vidros B;23;594;0
+Lustra-móveis B;79;740;0
+Luva doméstica B;10;221;0
+Pano de limpeza de cozinha B;12;2497;0
+Passa-roupas B;89;413;0
+Polidor de metais B;6;4644;0
+Pré-lavagem B;5;2526;0
+Removedor B;64;466;0
+Rodo B;76;581;0
+Rodo de pia B;57;748;0
+Sabão de coco B;22;2263;0
+Sabão em barra B;87;603;0
+Sabão em pó B;22;2208;0
+Sabão líquido (roupas) B;3;2959;0
+Saco de lixo grande B;25;1121;0
+Saco de lixo médio B;105;457;152
+Saco de lixo pequeno B;13;4466;16
+Saponáceo B;122;511;0
+Tira-manchas B;20;531;0
+Toalha de papel B;17;984;0
+Vassoura B;41;1438;0
+Carne bovina B;6;989;0
+Carne suína B;7;1724;163
+Coalhada B;10;612;0
+Cream cheese B;40;586;0
+Creme de leite fresco B;101;603;0
+Frango B;61;453;158
+Iogurte B;52;747;0
+Leite B;116;512;0
+Linguiça B;6;352;0
+Patê B;41;1607;0
+Peixe B;15;976;21
+Presunto B;92;501;0
+Queijo B;9;3105;0
+Requeijão cremoso B;60;474;0
+Salsicha B;88;480;0
+Água B;8;48;0
+Aperitivos e licores B;79;574;0
+Cerveja B;130;497;0
+Chás prontos B;52;1329;0
+Destilados B;54;540;0
+Isotônicos e energéticos B;56;962;0
+Outros B;11;197;0
+Refesco em pó B;45;450;0
+Refrigerantes B;18;1697;197
+Sucos B;111;503;0
+Vinho B;87;696;104
+Empanados B;29;1377;0
+Hambúrguer B;87;511;159
+Legumes B;68;624;0
+Pizza B;26;1210;0
+Pratos prontos B;105;445;117
+Salgadinhos B;48;1496;0
+Sobremesa B;95;589;0
+Sorvete B;11;587;0
+Abacate B;21;2730;0
+Acerola B;94;414;52
+Ameixa B;35;362;82
+Amora B;136;445;0
+Banana B;63;438;155
+Cereja B;146;421;0
+Figo B;37;1031;0
+Framboesa B;9;277;53
+Laranja B;1;3107;0
+Limão B;46;1325;0
+Maçã B;108;664;171
+Mamão B;49;437;0
+Manga B;41;1507;50
+Melancia B;31;861;69
+Melão B;2;1330;0
+Morango B;131;544;0
+Nectarina B;100;416;0
+Pera B;13;3445;0
+Pêssego B;63;411;0
+Pitanga B;118;540;0
+Uva B;109;461;0
+Adoçante B;31;587;76
+Biscoito doce B;5;276;88
+Biscoito salgado B;6;1826;0
+Bolo B;64;514;0
+Café B;51;402;0
+Cereal matinal B;57;1215;155
+Chá B;58;415;130
+Chocolate em pó B;93;636;144
+Filtro de papel B;97;661;127
+Leite em pó B;121;472;146
+Mistura para bolo B;104;416;0
+Pão de forma B;44;1240;126
+Pão francês B;19;356;0
+Torradas B;23;1011;0
+Açúcar B;96;607;0
+Alimento infantil B;93;793;0
+Amido de milho B;89;734;59
+Arroz B;39;401;0
+Aspargo em conserva B;24;1636;0
+Atum em lata B;63;652;0
+Aveia B;36;549;0
+Azeite B;14;851;0
+Azeitonas B;93;641;0
+Batata frita B;17;2089;0
+Caldo de carne/galinha/peixe B;10;343;0
+Catchup B;67;419;0
+Chocolate B;29;718;0
+Creme de leite em lata B;29;406;0
+Ervilha B;15;1035;0
+Ervilha em conserva B;5;4794;0
+Farinha de milho B;88;750;0
+Farinha de rosca B;7;302;0
+Farinha de trigo B;47;767;50
+Feijão B;42;688;0
+Gelatina B;16;388;0
+Gelatina em pó B;9;207;0
+Grão-de-bico B;20;3071;0
+Leite condensado B;8;2932;0
+Lentilha B;61;980;138
+Macarrão B;11;1547;0
+Macarrão massa fresca B;25;2782;0
+Macarrão para sopa B;34;1085;0
+Maionese B;63;987;0
+Milho em conserva B;5;3265;0
+Milho para pipoca B;69;593;0
+Molho de soja B;153;437;0
+Molho de tomate B;9;2649;0
+Mostarda B;33;584;0
+Óleo B;34;970;0
+Ovos B;92;539;61
+Café C;27;947;0
+Esponja C;3;560;109
+Palha de aço C;54;594;0
+Saco de lixo C;68;534;26
+Filme plástico C;18;460;0
+Fósforos C;27;421;53
+Filtros para café C;46;355;0
+Guardanapos C;54;992;0
+Papel alumínio C;98;563;181
+Papel toalha C;38;664;15
+Palitos de dente C;34;652;0
+Velas C;31;521;111
+Algodão C;76;780;0
+Acetona C;8;43;0
+Lâmina de barbear C;60;635;32
+Condicionador C;13;2996;0
+Shampoo C;72;609;21
+Desodorante C;64;447;0
+Sabonete C;86;659;0
+Papel higiênico C;157;447;0
+Cotonete C;22;1777;0
+Fio dental C;5;1692;0
+Creme dental C;37;632;0
+Água sanitária C;113;400;0
+Álcool C;80;673;0
+Amaciante C;39;582;0
+Cera C;4;4912;0
+Desinfetante C;16;790;0
+Limpa vidros C;31;1445;0
+Lustra-móveis C;5;470;0
+Multiuso C;31;1970;130
+Sabão C;156;442;0
+Detergente C;55;1132;160
+Arroz C;153;471;0
+Feijão C;88;443;0
+Fermento C;50;470;0
+Azeite C;128;494;0
+Farinha de trigo C;87;815;0
+Ovos C;23;325;197
+Pipoca C;155;408;40
+Farinha de mandioca C;11;76;129
+Massa C;109;615;0
+Maisena C;80;638;0
+Óleo C;2;3972;0
+Queijo ralado C;34;729;118
+Sal C;20;378;93
+Temperos C;11;239;0
+Vinagre C;25;820;0
+Agrião C;73;664;0
+Cebola C;76;545;0
+Batata C;50;1017;0
+Alho C;44;850;0
+Alface C;98;420;0
+Brócolis C;40;1517;0
+Pimentão C;25;412;0
+Tomate C;25;2888;0
+Cenoura C;131;418;0
+Couve C;11;2441;0
+Espinafre C;11;141;0
+Carne C;5;3245;0
+Frango C;9;2727;0
+Iogurte C;45;389;0
+Peixe C;44;1625;25
+Pratos congelados C;24;1439;0
+Leite C;67;466;0
+Queijos C;41;387;0
+Requeijão C;141;531;0
+Manteiga C;103;509;149
+Margarina C;11;951;0
+Presunto C;112;431;0
+Atum C;70;1052;0
+Creme de leite C;29;448;0
+Leite condensado C;9;74;78
+Molho de tomate C;43;673;0
+Azeitonas C;42;937;164
+Suco C;82;383;0
+Adoçante C;78;538;0
+Torradas C;71;392;182
+Geleia C;11;1620;158
+Cereais C;128;418;157
+Achocolatado C;76;506;0
+Açúcar C;16;1110;0
+Macadâmia Select;46;540;0
+Amêndoas Select;82;679;0
+Castanhas Select;14;2498;0
+Avelãs Select;145;431;0
+Chocolate amargo Select;23;283;0
+Farinha de coco Select;13;694;137
+Farinha de linhaça Select;80;536;0
+Linhaça Dourada Select;36;1971;0
+Farinha de berinjela Select;22;2723;0
+Farinha de castanha do Pará Select;2;3278;0
+Adoçantes Select;17;739;102
+Stevia Select;10;3379;0
+Xylitol Select;44;559;135
+Eritritol Select;11;779;0
+Gelatina sem sabor Select;21;536;0
+Cafés e chás Select;16;2488;0
+Carnes, aves e peixes;20;492;167
+Ovos Select;5;1959;0
+Creme de leite Select;40;1082;0
+Yogurte Select;34;1998;0
+Nata;35;587;0
+Queijos amarelos Select;72;539;156
+Verduras e legumes Select;9;514;0
+Frutas Select;66;668;0
+Temperos Select;82;420;0
