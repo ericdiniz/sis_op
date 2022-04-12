@@ -84,7 +84,7 @@ public class Pedido implements Comparable<Pedido> {
     public String toString() {
 
         return "Cliente: " + this.cliente.getNome() + " | Quantidade de produtos: " + this.quantProdutos
-                + " | Tempo de empacotamento: " 
+                + " | Prazo de empacotamento: " 
                 + (this.getPrazoEmpc() == Integer.MAX_VALUE ? "Sem Prazo" : this.getPrazoEmpc())  
                 +  " | Volume Total Pedido: "  + this.getVolPed() 
                 + " | Número de pacotes: " + this.getQuantPac() + " | Tempo de empacotamento: " + this.getTempo();
