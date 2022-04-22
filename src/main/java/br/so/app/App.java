@@ -16,15 +16,30 @@ import br.so.importador.ImportCSV;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-     final double VOLUME_MAX_PAC = 5000.0; // Volume máximo de um pacote
-     final double TEMPO_FIX = 5; // 5 segundos 
-     final double TEMPO_TRANS_PROD = 0.5;
+
+ public static final double VOLUME_MAX_PAC = 5000.0; // Volume máximo de um pacote
+ public static final double TEMPO_FIX = 5; // 5 segundos 
+ public static final double TEMPO_TRANS_PROD = 0.5;
+ public static final double DIA_TRABALHO = 28800.00; // 8 horas de trabalho diário 
  
 
+    public static void main( String[] args )
+    {
+     
+
+      mapByPedido();
+
+      mapByCliente();
+
+
+
+
+    }
+
+    public static void mapByPedido(){
+
       List<Pedido> pedidos = ImportCSV.readArqCSV("teste.txt");
- 
+
       pedidos.sort(Pedido::compareTo);
 
       System.out.println("Opção 1 - Prioridade de prazo de entrega e quantidade de produtos");
@@ -43,13 +58,20 @@ public class App
 
       System.out.println("Média por pedido (segundos): " + (tempoTotal / pedidos.size()));
 
-      System.out.println("Fim Opção 1");
+    }
 
-      System.out.println("Opção 2 - Prioridade de prazo de entrega por cliente");
+    /**
+     * Estratégia de agrupar os pedidos por cliente. 
+     */
+    public static void mapByCliente(){
 
-      tempoTotal = 0.0;
+      List<Pedido> pedidos = ImportCSV.readArqCSV("teste.txt");
+
+      double tempoTotal = 0.0;
       double tempoTotalEsteira1 = 0.0;
       double tempoTotalEsteira2 = 0.0;
+      double numPedidosDia = 0;
+      double diasTerminoProd = 0; // Variável responsável por verificar a quantidade de dias para concluir a produção
       int i = 0;
 
       Map<Cliente, List<Pedido>> map = pedidos.stream().collect(Collectors.groupingBy(Pedido::getCliente));
@@ -59,7 +81,7 @@ public class App
         double quantProd = m.getValue().stream().mapToDouble(Pedido::getQuantProdutos).sum();
         double prazoEmpc = m.getValue().stream().filter(p -> p.getPrazoEmpc() != Integer.MAX_VALUE).mapToDouble(Pedido::getPrazoEmpc).sum();
         double volumeTotal = m.getValue().stream().mapToDouble(Pedido::getVolPed).sum();
-        double quantPac =  Math.ceil(volumeTotal/VOLUME_MAX_PAC);
+        double quantPac =  Math.ceil(volumeTotal/VOLUME_MAX_PAC); //Quantidade de pacotes a serem gerados por cliente. 
         double tempoEmpac = (quantPac * TEMPO_FIX) + (quantProd * TEMPO_TRANS_PROD);
 
         System.out.println("Cliente: " + m.getKey().getNome() + " | Quantidade de produtos: " + quantProd
@@ -70,7 +92,7 @@ public class App
 
         
 
-        //Sorteio os clientes e somo o tempo para atendimento do pedido. 
+        //Sorteio os clientes e somo o tempo para atendimento do pedido para cada esteira. 
         if(i % 2 == 0){
           tempoTotalEsteira1 += tempoEmpac;
         } else {
@@ -81,28 +103,39 @@ public class App
 
         tempoTotal += tempoEmpac;
 
+        numPedidosDia += tempoEmpac;
+
+        if(numPedidosDia >= 28800.00){
+          System.out.println("Encerramento - Numero de pedidos atendidos: " + i);
+          numPedidosDia = 0.0;
+          diasTerminoProd ++;
+        }
+
+      
         System.out.println("Tempo total da estreira (segundos): " +  tempoTotal);
         System.out.println("");
 
       }
 
-      System.out.println("Média por pedido (segundos): " + (tempoTotal / pedidos.size()));
-      
-      System.out.println("Fim Opção 2 \n");
 
-      System.out.println("Opção 3 - Duplicar Esteira: ");
+      System.out.println("Estratégia de atendimento por cliente (Uma única esteira): ");
+      System.out.println("Média por pedido (segundos) (Única esteira): " + (tempoTotal / pedidos.size()));
+
+      System.out.println("Quantidade de pedidos atendidos: " + pedidos.size());
+      System.out.println("Quantidade de dias para termino: " + diasTerminoProd);
 
       System.out.println("\n");
-      System.out.println("Média por pedido esteira 1 - (segundos): " + (tempoTotalEsteira1 / (pedidos.size()/2)));
 
+      System.out.println("Estratégia de atendimento por cliente (Duas esteiras): ");
+      System.out.println("Média por pedido esteira 1 - (segundos): " + (tempoTotalEsteira1 / (pedidos.size()/2)));
       System.out.println("Média por pedido esteira 2 - (segundos): " + (tempoTotalEsteira2 / (pedidos.size()/2)));
+      System.out.println("Quantidade de pedidos atendidos: " + pedidos.size());
+      System.out.println("Quantidade de dias para termino: " + diasTerminoProd/2);
+
+
       
 
-
-
-
-
-
-
+      
     }
+
 }
