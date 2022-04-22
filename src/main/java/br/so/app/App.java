@@ -1,6 +1,6 @@
 package br.so.app;
 
-import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -48,6 +48,9 @@ public class App
       System.out.println("Opção 2 - Prioridade de prazo de entrega por cliente");
 
       tempoTotal = 0.0;
+      double tempoTotalEsteira1 = 0.0;
+      double tempoTotalEsteira2 = 0.0;
+      int i = 0;
 
       Map<Cliente, List<Pedido>> map = pedidos.stream().collect(Collectors.groupingBy(Pedido::getCliente));
 
@@ -65,6 +68,15 @@ public class App
         +  " | Volume Total Pedido: "  + volumeTotal
         + " | Número de pacotes: " + quantPac + " | Tempo de empacotamento: " + tempoEmpac);
 
+        
+        if(i % 2 == 0){
+          tempoTotalEsteira1 += tempoEmpac;
+        } else {
+          tempoTotalEsteira2 += tempoEmpac;
+        }
+
+        i++;
+
         tempoTotal += tempoEmpac;
 
         System.out.println("Tempo total da estreira (segundos): " +  tempoTotal);
@@ -74,11 +86,15 @@ public class App
 
       System.out.println("Média por pedido (segundos): " + (tempoTotal / pedidos.size()));
       
-      System.out.println("Fim Opção 2");
+      System.out.println("Fim Opção 2 \n");
 
       System.out.println("Opção 3 - Duplicar Esteira: ");
 
+      System.out.println("\n");
+      System.out.println("Média por pedido esteira 1 - (segundos): " + (tempoTotalEsteira1 / (pedidos.size()/2)));
 
+      System.out.println("Média por pedido esteira 2 - (segundos): " + (tempoTotalEsteira2 / (pedidos.size()/2)));
+      
 
 
 
