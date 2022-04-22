@@ -69,6 +69,8 @@ public class App
         + " | Número de pacotes: " + quantPac + " | Tempo de empacotamento: " + tempoEmpac);
 
         
+
+        //Sorteio os clientes e somo o tempo para atendimento do pedido. 
         if(i % 2 == 0){
           tempoTotalEsteira1 += tempoEmpac;
         } else {
