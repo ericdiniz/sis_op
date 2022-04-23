@@ -27,7 +27,6 @@ public class App
     {
      
 
-      mapByPedido();
 
       mapByCliente();
 
@@ -36,27 +35,21 @@ public class App
 
     }
 
-    public static void mapByPedido(){
+    public static double  getMediaByPedido(){
 
       List<Pedido> pedidos = ImportCSV.readArqCSV("teste.txt");
 
       pedidos.sort(Pedido::compareTo);
 
-      System.out.println("Opção 1 - Prioridade de prazo de entrega e quantidade de produtos");
-
       double tempoTotal = 0.0;
     
       for(Pedido p : pedidos) {
 
-        System.out.println(p.toString());
-
         tempoTotal += p.getTempo();
-        System.out.println("Tempo total da estreira (segundos): " +  tempoTotal);
-        System.out.println("");
-
+    
       }
 
-      System.out.println("Média por pedido (segundos): " + (tempoTotal / pedidos.size()));
+     return (tempoTotal / pedidos.size());
 
     }
 
@@ -106,9 +99,14 @@ public class App
         numPedidosDia += tempoEmpac;
 
         if(numPedidosDia >= 28800.00){
+          System.out.println("\n");
+          System.out.println("\n");
           System.out.println("Encerramento - Numero de pedidos atendidos: " + i);
+          System.out.println("\n");
+          System.out.println("\n");
           numPedidosDia = 0.0;
           diasTerminoProd ++;
+          i = 0;
         }
 
       
@@ -117,6 +115,18 @@ public class App
 
       }
 
+      if(numPedidosDia < 28800.00){
+        System.out.println("\n");
+          System.out.println("\n");
+          System.out.println("Encerramento - Numero de pedidos atendidos: " + i);
+          System.out.println("\n");
+          System.out.println("\n");
+        diasTerminoProd ++;
+        i = 0;
+      }
+
+      System.out.println("Estratédia de atendimento por pedido (única esteira)");
+      System.err.println("Média por pedido (segundos)" + getMediaByPedido());
 
       System.out.println("Estratégia de atendimento por cliente (Uma única esteira): ");
       System.out.println("Média por pedido (segundos) (Única esteira): " + (tempoTotal / pedidos.size()));
