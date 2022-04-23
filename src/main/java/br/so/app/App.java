@@ -118,7 +118,7 @@ public class App
       if(numPedidosDia < DIA_TRABALHO){
         System.out.println("\n");
           System.out.println("\n");
-          System.out.println("Encerramento - Numero de pedidos atendidos: " + i);
+          System.out.println("Saiu a van - Numero de pedidos atendidos: " + i);
           System.out.println("\n");
           System.out.println("\n");
         diasTerminoProd ++;
