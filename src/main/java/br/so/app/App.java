@@ -20,7 +20,7 @@ public class App
  public static final double VOLUME_MAX_PAC = 5000.0; // Volume máximo de um pacote
  public static final double TEMPO_FIX = 5; // 5 segundos 
  public static final double TEMPO_TRANS_PROD = 0.5;
- public static final double DIA_TRABALHO = 28800.00; // 8 horas de trabalho diário 
+ public static final double DIA_TRABALHO = 1440.00; // 4 horas de trabalho, quando sai a primeira van 
  
 
     public static void main( String[] args )
@@ -98,10 +98,10 @@ public class App
 
         numPedidosDia += tempoEmpac;
 
-        if(numPedidosDia >= 28800.00){
+        if(numPedidosDia >= DIA_TRABALHO){
           System.out.println("\n");
           System.out.println("\n");
-          System.out.println("Encerramento - Numero de pedidos atendidos: " + i);
+          System.out.println("Saiu a van - Numero de pedidos atendidos: " + i);
           System.out.println("\n");
           System.out.println("\n");
           numPedidosDia = 0.0;
@@ -115,7 +115,7 @@ public class App
 
       }
 
-      if(numPedidosDia < 28800.00){
+      if(numPedidosDia < DIA_TRABALHO){
         System.out.println("\n");
           System.out.println("\n");
           System.out.println("Encerramento - Numero de pedidos atendidos: " + i);
