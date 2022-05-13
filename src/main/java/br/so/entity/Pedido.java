@@ -5,8 +5,8 @@ import java.util.Comparator;
 public class Pedido implements Comparable<Pedido> {
 
     private Cliente cliente;
-    private int quantProdutos;
-    private int prazoEmpc;
+    private double quantProdutos;
+    private double prazoEmpc;
     private static final double VOLUME_PROD = 250.0; // Volume da unidade de produto 
     private static final double VOLUME_MAX_PAC = 5000.0; // Volume máximo de um pacote
     private static final double TEMPO_FIX = 5; // 5 segundos 
@@ -17,21 +17,21 @@ public class Pedido implements Comparable<Pedido> {
     /**
      * @return the quantProdutos
      */
-    public int getQuantProdutos() {
+    public double getQuantProdutos() {
         return quantProdutos;
     }
 
     /**
      * @param quantProdutos the quantProdutos to set
      */
-    public void setQuantProdutos(int quantProdutos) {
+    public void setQuantProdutos(double quantProdutos) {
         this.quantProdutos = quantProdutos;
     }
 
     /**
      * @return the prazoEmpc
      */
-    public int getPrazoEmpc() {
+    public double getPrazoEmpc() {
 
         if(prazoEmpc == 0)
             return Integer.MAX_VALUE;
@@ -42,10 +42,14 @@ public class Pedido implements Comparable<Pedido> {
     /**
      * @param prazoEmpc the prazoEmpc to set
      */
-    public void setPrazoEmpc(int prazoEmpc) {
+    public void setPrazoEmpc(double prazoEmpc) {
         this.prazoEmpc = prazoEmpc;
     }
 
+    /**
+     * 
+     * @return Retorna o tempo de empacotamento. 
+     */
     public double getTempo() {
         return (this.getQuantPac() * TEMPO_FIX) + (this.getQuantProdutos() * TEMPO_TRANS_PROD);
     }
@@ -83,7 +87,7 @@ public class Pedido implements Comparable<Pedido> {
     @Override
     public String toString() {
 
-        return "Cliente: " + this.cliente.getNome() + " | Quantidade de produtos: " + this.quantProdutos
+        return  "| Quantidade de produtos: " + this.quantProdutos
                 + " | Prazo de empacotamento: " 
                 + (this.getPrazoEmpc() == Integer.MAX_VALUE ? "Sem Prazo" : this.getPrazoEmpc())  
                 +  " | Volume Total Pedido: "  + this.getVolPed() 
@@ -99,15 +103,5 @@ public class Pedido implements Comparable<Pedido> {
         .compare(this, o);
 
     }
-
-    // montar a esteira
-    /*
-     * Regras:
-     * - limite de volume
-     * - prazo empacotamento
-     * - tempo fixo 5 seg
-     * - tempo diario de 8h (4h manha e 4h tarde)
-     * 
-     */
 
 }
