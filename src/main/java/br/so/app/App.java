@@ -1,7 +1,9 @@
 package br.so.app;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 import br.so.entity.Cliente;
@@ -40,7 +42,8 @@ public class App {
 
       tempoTotal += p.getTempo();
 
-     //System.out.println(p.getCliente().toString() + p.toString()); // Print dos pedidos
+      // System.out.println(p.getCliente().toString() + p.toString()); // Print dos
+      // pedidos
 
     }
 
@@ -54,13 +57,35 @@ public class App {
   public static void mapByCliente() {
 
     List<Pedido> pedidos = ImportCSV.readArqCSV("teste.txt");
+    Map<Cliente, List<Pedido>> mapEsteira1 = new HashMap<>();
+    Map<Cliente, List<Pedido>> mapEsteira2 = new HashMap<>();
 
     Map<Cliente, List<Pedido>> map = pedidos.stream().collect(Collectors.groupingBy(Pedido::getCliente));
 
-    Esteira esteira1 = new Esteira(map, "1");
+    int i = 0;
 
-    //Método que criar uma tread para a esteira 1
+    //Sorteia os clientes entre as esteiras disponíveis. 
+    for (Entry<Cliente, List<Pedido>> m : map.entrySet()) {
+
+      if (i % 2 == 0) {
+        mapEsteira1.put(m.getKey(), m.getValue());
+      } else {
+        mapEsteira2.put(m.getKey(), m.getValue());
+      }
+
+      i++;
+      
+    }
+
+    Esteira esteira1 = new Esteira(mapEsteira1, "1");
+
+    // Método que criar uma tread para a esteira 1
     esteira1.executaEsteira();
+
+    Esteira esteira2 = new Esteira(mapEsteira2, "2");
+
+    // Método que criar uma tread para a esteira 2
+    esteira2.executaEsteira();
 
   }
 

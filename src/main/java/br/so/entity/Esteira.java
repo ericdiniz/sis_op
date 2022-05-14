@@ -55,6 +55,7 @@ public class Esteira {
                 System.out.println("\nMédia por pedido da esteira: "  + getIdEsteira() + " | "+  (tempoTotal/count));
                 
                 System.out.println("\nQuantidade de pedidos atendidos: " +  count);
+                
                 System.out.println("\nDias para o término da produção: " +  diasTerminoProd);
 
             }
